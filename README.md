@@ -1,5 +1,4 @@
 # Inventory-Stock
- # POS-Toko
 Aplikasi ini bernama **Inventory Stock** yang berfungsi untuk mendata barang masuk, barang keluar, dan history transaksi
 
 Fitur unggulan :
