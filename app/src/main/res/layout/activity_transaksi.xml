@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ActivityTransaksi">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/gridLayout1"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="8"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+                app:rowCount="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvPenyimpanan"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="penyimpanan"
+                    app:cardBackgroundColor="#B5A79C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="95dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/calculation"
+                            app:layout_constraintBottom_toTopOf="@+id/sjudul1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/desc1" />
+
+                        <TextView
+                            android:id="@+id/desc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="Barang Masuk"
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sjudul1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Kelola Barang Masuk"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvPenjualan"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="penjualan"
+                    app:cardBackgroundColor="#B5A79C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="95dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/shopping_basket"
+                            app:layout_constraintBottom_toTopOf="@+id/sjudul2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/desc2" />
+
+                        <TextView
+                            android:id="@+id/desc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Barang Keluar"
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sjudul2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Kelola Barang Keluar"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.GridLayout>
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/gridLayout2"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="8"
+                app:alignmentMode="alignMargins"
+                app:columnCount="2"
+                app:columnOrderPreserved="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout1"
+                app:rowCount="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvMasuk"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="masuk"
+                    app:cardBackgroundColor="#B5A79C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1" >
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="95dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/moneybag"
+                            app:layout_constraintBottom_toTopOf="@+id/sjudul3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/desc3" />
+
+                        <TextView
+                            android:id="@+id/desc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="Pemasukan"
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sjudul3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Kelola Pemasukan"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cvKeluar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="keluar"
+                    app:cardBackgroundColor="#B5A79C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/view4"
+                            android:layout_width="95dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/schoolmaterial"
+                            app:layout_constraintBottom_toTopOf="@+id/sjudul4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/desc4" />
+
+                        <TextView
+                            android:id="@+id/desc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="Pengeluaran"
+                            android:textColor="@android:color/background_light"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sjudul4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="Kelola Pengeluaran"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.GridLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+</android.support.constraint.ConstraintLayout>

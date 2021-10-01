@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ActivityMaster">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:rowCount="2">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="identitas"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/placeholder"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul1" />
+
+                <TextView
+                    android:id="@+id/sjudul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola identitas"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/judul1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Identitas"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.459"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="kategori"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/clipboard"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul2" />
+
+                <TextView
+                    android:id="@+id/sjudul2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola kategori barang"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/judul2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Kategori"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="satuan"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/barcode"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul3" />
+
+                <TextView
+                    android:id="@+id/sjudul3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola satuan barang"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/judul3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Satuan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="barang"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/shopping_bag"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jdul4" />
+
+                <TextView
+                    android:id="@+id/jdul4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Barang"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sjudul4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola barang"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="supplier"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/id_card"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/jdul5" />
+
+                <TextView
+                    android:id="@+id/jdul5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Supplier"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sjudul5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola daftar supplier"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="pelanggan"
+            app:cardBackgroundColor="#B5A79C"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground">
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="95dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/video_chat"
+                    app:layout_constraintBottom_toTopOf="@+id/sjudul6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/judul6" />
+
+                <TextView
+                    android:id="@+id/judul6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Pelanggan"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sjudul6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Kelola daftar pelanggan"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</android.support.constraint.ConstraintLayout>

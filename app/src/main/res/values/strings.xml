@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Inventory Stock Plus Keuangan</string>
+
+    <string-array name="laporankeuangan">
+        <item>Semua</item>
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+
+</resources>
